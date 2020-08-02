@@ -7,7 +7,8 @@ const StatSchema = new Schema({
       allStarCount: {type: Number, required: true},
             ppg: {type: Number, required: true},
             apg: {type: Number, required: true},
-            rpg: {type: Number, required: true}
+            rpg: {type: Number, required: true},
+ playerFullName: {type: Schema.Types.ObjectId, ref: ['pg', 'sg', 'sf', 'pf', 'c']}
 
 })
 
