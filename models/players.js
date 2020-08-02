@@ -57,21 +57,11 @@ const cSchema = new Schema({
       imageURL: {type: String, required: true}
 })
 
-const StatSchema = new Schema({
-
-      championships: {type: Number, required: true},
-      allStarCount: {type: Number, required: true},
-            ppg: {type: Number, required: true},
-            apg: {type: Number, required: true},
-            rpg: {type: Number, required: true}
-
-})
 
 const Pg = model('pg', pgSchema)
 const Sg = model('sg', sgSchema)
 const Sf = model('sf', sfSchema)
 const Pf = model('pf', pfSchema)
 const C = model('c', cSchema)
-const Stat = model('stat', StatSchema)
 
-module.exports = { Pg, Sg, Sf, Pf, C, Stat}
+module.exports = { Pg, Sg, Sf, Pf, C } 
