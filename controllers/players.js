@@ -7,7 +7,7 @@ const indexPlayer = async (req, res) => {
 }
 
 //seed routes
-const seedPlayer = async (req, res) => {
+const seedplayer = async (req, res) => {
   res.json(await Player.create({playerData}))
 }
 
@@ -26,4 +26,4 @@ const destroyPlayer = async (req, res) => {
   res.json(await Player.findByIdAndDelete(req.params.id))
 }
 
-module.exports = {indexPlayer, seedPlayer, createPlayer, updatePlayer, destroyPlayer}
+module.exports = {indexPlayer, seedplayer, createPlayer, updatePlayer, destroyPlayer}
