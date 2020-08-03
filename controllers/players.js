@@ -1,14 +1,10 @@
 const Player = require('../models/players.js')
 const playerData = require('../data/players.js')
 
+
 //index route
 const indexPlayer = async (req, res) => {
-
-const allPlayers = await Player.find({position: req.params.position})
-
-const allPlayers1 = await allPlayers.populate({path: 'careerStats'})
-
-  res.json(allPlayers1)
+  res.json(await Player.find({}))
 }
 
 //seed routes
@@ -37,3 +33,28 @@ const destroyPlayer = async (req, res) => {
 }
 
 module.exports = {indexPlayer, seedplayer, createPlayer, updatePlayer, destroyPlayer}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//personalized route for orginal idea
+// const indexPlayer1 = async (req, res) => {
+
+// const allPlayers = await Player.find({position: req.params.position})
+
+// const allPlayers1 = await allPlayers.populate({path: 'careerStats'})
+
+//   res.json(allPlayers1)
+// }

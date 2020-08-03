@@ -11,7 +11,7 @@ const mongoose = require("mongoose"); //bring in mongoose library
 // const sampleRouter = require('relative path')
 // const sampleRouter =  require('relative path)
 const playerRouter = require('./routes/players.js')
-const statRouter = require('./routes/stats.js')
+// const statRouter = require('./routes/stats.js')
 
 
 
@@ -77,7 +77,7 @@ app.use(express.static("public")); //Allows static serving of files from public 
 // app.use('/sample', sampleRouter)
 // app.use('/sample', sampleRouter)
 app.use('/player', playerRouter)
-app.use('/stat', statRouter)
+// app.use('/stat', statRouter)
 
 ///////////////////////////
 //ROOT ROUTE (FOR TESTING)
