@@ -8,7 +8,7 @@ const indexStat = async (req, res) => {
 
 //seed routes
 const seedstat = async (req, res) => {
-  res.json(await Stat.create({}))
+  res.json(await Stat.create(statData))
 }
 
 

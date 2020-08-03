@@ -3,12 +3,22 @@ const playerData = require('../data/players.js')
 
 //index route
 const indexPlayer = async (req, res) => {
-  res.json(await Player.find({}))
+
+const allPlayers = await Player.find({position: req.params.position})
+
+const allPlayers1 = await allPlayers.populate({path: 'careerStats'})
+
+  res.json(allPlayers1)
 }
 
 //seed routes
 const seedplayer = async (req, res) => {
-  res.json(await Player.create({playerData}))
+  try {
+res.json(await Player.create(playerData))
+}
+catch(error){console.log(error);
+res.send(error)
+}
 }
 
 //create route
