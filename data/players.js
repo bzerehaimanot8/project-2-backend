@@ -38,9 +38,8 @@ pgSeed = [
       careerStats: [{type: Schema.Types.ObjectId, ref: 'stat'}],
           from: 'Wake Forest University',
       imageURL: 'https://vignette.wikia.nocookie.net/nba/images/0/00/Chris_Paul_OKC_Thunder.jpg/revision/latest/scale-to-width-down/340?cb=20200510075823'
-}]
-
-sgSeed = [{
+},
+{
 
       fullName: 'Michael Jordan',
       position: 'Shooting Guard',
@@ -81,11 +80,8 @@ sgSeed = [{
       careerStats: [{type: Schema.Types.ObjectId, ref: 'stat'}],
           from: 'University of Houston',
       imageURL: 'https://i.pinimg.com/originals/dc/59/8e/dc598e22dca6e9f04e4ab656950a9531.jpg'
-}]
-
-
-
-sfSeed = [{
+},
+{
       fullName: 'Lebron James',
       position: 'Small Forward',
       height: '6ft 9',
@@ -125,11 +121,8 @@ sfSeed = [{
       careerStats: [{type: Schema.Types.ObjectId, ref: 'stat'}],
           from: 'University of Idaho',
       imageURL: 'https://i.pinimg.com/originals/ee/5d/4b/ee5d4b1fb21a16c95439bc64a6772c83.jpg'
-}]
-
-
-
-pfSeed = [{
+},
+{
   
       fullName: 'Kevin Garnett',
       position: 'Power Forward',
@@ -147,7 +140,6 @@ pfSeed = [{
           from: 'Rontgen High School Wurzburg',
       imageURL: 'https://i.pinimg.com/originals/ba/4e/c7/ba4ec79299088c417d0e835d2c243796.jpg'
 },
-
 {     fullName: 'Charles Barkley',
       position: 'Power Forward',
       height: '6ft 6',
@@ -156,7 +148,6 @@ pfSeed = [{
           from: 'Auburn University',
       imageURL: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/2-charles-barkley-nba-photos.jpg'
 },
-
 {     fullName: 'Karl Malone',
       position: 'Power Forward',
       height: '6ft 9',
@@ -165,7 +156,6 @@ pfSeed = [{
           from: 'Louisiana Tech University',
       imageURL: 'https://vignette.wikia.nocookie.net/nba/images/1/1e/Karl_Malone_1.jpg/revision/latest/scale-to-width-down/340?cb=20120528235829'
 },
-
 {     fullName: 'Chris Webber',
       position: 'Power Forward',
       height: '6ft 9',
@@ -173,11 +163,8 @@ pfSeed = [{
       careerStats: [{type: Schema.Types.ObjectId, ref: 'stat'}],
           from: 'University of Michigan',
       imageURL: 'https://i.cdn.turner.com/dr/nba/teamsites-nbateams/release/magic/sites/magic/files/webber1_121813.jpg'
-}]
-
-
-
-cSeed = [{     
+},
+{     
 
       fullName: 'Kareem Abdul-Jabbar',
       position: 'Center',
