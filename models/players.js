@@ -12,5 +12,5 @@ const playerSchema = new Schema({
       imageURL: {type: String, required: true}
 })
 
-const PlayerSchema = model('player', playerSchema)
-module.exports = PlayerSchema
+const Player = model('player', playerSchema)
+module.exports = Player

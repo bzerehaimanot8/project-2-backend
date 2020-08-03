@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const {Schema, model} = mongoose
 
-const StatSchema = new Schema({
+const statSchema = new Schema({
 
   playerFullName: {type: Schema.Types.ObjectId, ref: 'player'},
       championships: {type: Number, required: true},
@@ -12,5 +12,5 @@ const StatSchema = new Schema({
 
 })
 
-const Stat = model('stat', StatSchema)
+const Stat = model('stat', statSchema)
 module.exports = Stat

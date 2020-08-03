@@ -10,6 +10,8 @@ const cors = require("cors"); //Brings in CORS library
 const mongoose = require("mongoose"); //bring in mongoose library
 // const sampleRouter = require('relative path')
 // const sampleRouter =  require('relative path)
+const playerRouter = require('./routes/players.js')
+const statRouter = require('./routes/stats.js')
 
 
 
@@ -66,12 +68,17 @@ app.use(express.json()); //Turns JSON from post/put/patch requests and converts 
 app.use(morgan("dev")); // Enables Morgan logging, creating more useful terminal logs while server runs
 app.use(express.static("public")); //Allows static serving of files from public folder
 
+//backend/server.js
+
 ////////////////////
 // ROUTES AND ROUTERS
 ////////////////////
 //These handle sending responses to server requests for spefic endpoints
 // app.use('/sample', sampleRouter)
 // app.use('/sample', sampleRouter)
+app.use('/player', playerRouter)
+app.use('/stat', statRouter)
+
 ///////////////////////////
 //ROOT ROUTE (FOR TESTING)
 ///////////////////////////
