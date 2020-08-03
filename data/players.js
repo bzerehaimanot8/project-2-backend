@@ -1,4 +1,4 @@
-pgSeed = [
+module.exports = [
 {     fullName: 'Magic Johnson',
       position: 'Point Guard',
       height: '6ft 9',

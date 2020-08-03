@@ -1,4 +1,4 @@
-statSeed = [{
+module.exports = [{
       playerFullName: 'Magic Johnson',
     championships: 5,
       allStarCount: 12,
