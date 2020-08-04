@@ -11,6 +11,7 @@ const mongoose = require("mongoose"); //bring in mongoose library
 // const sampleRouter = require('relative path')
 // const sampleRouter =  require('relative path)
 const playerRouter = require('./routes/players.js')
+const teamRouter = require('./routes/team.js')
 
 
 
@@ -82,10 +83,10 @@ app.use(express.static("public")); //Allows static serving of files from public 
 app.use('/player', playerRouter)
 // app.get('/teamplayer/:teamid/:playerid", async (req,res) => {
 // const team = await Team.finfOneById(reqparams.teamid)
-//const player = await Player.findOneById(req.params.playerid)
-//team.members.push(player._id)
-//team.save()
-//res.json
+// const player = await Player.findOneById(req.params.playerid)
+// team.members.push(player._id)
+// team.save()
+// res.json(team)
 // app.use('/stat', statRouter)
 
 ///////////////////////////
