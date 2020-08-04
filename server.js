@@ -81,6 +81,7 @@ app.use(express.static("public")); //Allows static serving of files from public 
 // app.use('/sample', sampleRouter)
 // app.use('/sample', sampleRouter)
 app.use('/player', playerRouter)
+app.use('/teamplayer', teamRouter)
 // app.get('/teamplayer/:teamid/:playerid", async (req,res) => {
 // const team = await Team.finfOneById(reqparams.teamid)
 // const player = await Player.findOneById(req.params.playerid)
