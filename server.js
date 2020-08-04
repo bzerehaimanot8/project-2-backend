@@ -11,7 +11,7 @@ const mongoose = require("mongoose"); //bring in mongoose library
 // const sampleRouter = require('relative path')
 // const sampleRouter =  require('relative path)
 const playerRouter = require('./routes/players.js')
-// const statRouter = require('./routes/stats.js')
+
 
 
 
@@ -23,7 +23,10 @@ const PORT = process.env.PORT; //port number for server as defined in environmen
 const NODE_ENV = process.env.NODE_ENV; //"development" or "production"
 const mongoURI = process.env.mongoURI + "Roster"; //URI for connecting to database specified in .env
 const db = mongoose.connection; //the mongoose connection object
-const mongoConfigObject = { useNewUrlParser: true, useUnifiedTopology: true }; //Config option to eliminate deprecation warnings
+const mongoConfigObject = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}; //Config option to eliminate deprecation warnings
 
 ///////////////////////////
 //CONNECT TO DATABASE
@@ -77,6 +80,12 @@ app.use(express.static("public")); //Allows static serving of files from public 
 // app.use('/sample', sampleRouter)
 // app.use('/sample', sampleRouter)
 app.use('/player', playerRouter)
+// app.get('/teamplayer/:teamid/:playerid", async (req,res) => {
+// const team = await Team.finfOneById(reqparams.teamid)
+//const player = await Player.findOneById(req.params.playerid)
+//team.members.push(player._id)
+//team.save()
+//res.json
 // app.use('/stat', statRouter)
 
 ///////////////////////////
