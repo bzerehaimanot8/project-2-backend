@@ -21,7 +21,7 @@ const playerRouter = require('./routes/players.js')
 // Variables with global scope
 const PORT = process.env.PORT; //port number for server as defined in environment variables
 const NODE_ENV = process.env.NODE_ENV; //"development" or "production"
-const mongoURI = process.env.mongoURI + "Roster"; //URI for connecting to database specified in .env
+const mongoURI = process.env.mongoURI; //URI for connecting to database specified in .env
 const db = mongoose.connection; //the mongoose connection object
 const mongoConfigObject = {
   useNewUrlParser: true,
