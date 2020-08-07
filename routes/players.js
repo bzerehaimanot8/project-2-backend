@@ -1,8 +1,9 @@
-const {indexPlayer, seedplayer, createPlayer, updatePlayer, destroyPlayer} = require('../controllers/players.js')
+const {indexPlayer, seedplayer, createPlayer, updatePlayer, destroyPlayer, PlayerById} = require('../controllers/players.js')
 const {Router} = require('express')
 const router = Router()
 
 router.get('/', indexPlayer)
+router.get('/:id', PlayerById)
 router.get('/seedplayer', seedplayer)
 router.post('/', createPlayer)
 router.put('/:id', updatePlayer)
